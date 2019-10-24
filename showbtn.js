@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const services = ["4406660", "4406662", "4406663", "4406661"],
   targetEls = [
     ".tn-elem__1367186951563904650693 div",
