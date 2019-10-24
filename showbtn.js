@@ -21,7 +21,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
                background: #00000000;
                border-color: red;
                color: red; "
-      >Смотреть вебинар</button></a>`;
+      >Смотреть вебинар<img src="https://static.tildacdn.com/tild6235-6638-4839-a132-653362626135/youtube-icon.svg"></button></a>`;
 
 let nowDate = '2019-10-25';
 let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
