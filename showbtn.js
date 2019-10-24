@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const services = ["4406660", "4406662", "4406663", "4406661"],
   targetEls = [
     ".tn-elem__1367186951563904650693 div",
@@ -34,7 +36,7 @@ let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from="
 function showButton(i) {
   document
     .querySelector(targetEls[i])
-    .insertAdjacentHTML("afterbegin", htmlBtn);
+    .insertAdjacentHTML("beforeend", htmlBtn);
 }
 
 fetch(reServices)
