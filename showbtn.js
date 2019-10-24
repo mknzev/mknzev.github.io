@@ -17,8 +17,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
   htmlBtn = `
       <a href="#" target="_blank">
       <button id="button" style="
-               font-family: Graphik;           
-               margin-bottom: 4px;
+               font-family: Graphik;      
                background: #00000000;
                border-color: red;
                color: red; "
@@ -42,7 +41,7 @@ fetch(reServices)
   .then(data => {
     console.log(data.data);
     for (let i in data.data) {
-      let serDate = new Date().getTime() / 1000 - new Date(data.data[i].date) / 1000 + 900;
+      let serDate = new Date().getTime() / 1000 - new Date(data.data[i].date) / 1000;
       for (let h in services) {
         if (data.data[i].service_id == services[h]) {
           console.log(11);
