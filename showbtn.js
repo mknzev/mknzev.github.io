@@ -1,4 +1,4 @@
-;;;
+export
 
 const services = ["4406660", "4406662", "4406663", "4406661"],
   targetEls = [
