@@ -19,14 +19,14 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
       <button id="button" style="position: absolute;
                           z-index: 1;
                           margin-left: -190px;
-                          margin-top: 48px;
+                          margin-top: 80px;
                           background: #00000000;
                           border-color: red;
                           border-radius: 7px;
                           font-family: Graphik;
                           color: red;
                           font-weight: bold;"
-      >Смотреть вебинар<img src="https://static.tildacdn.com/tild6235-6638-4839-a132-653362626135/youtube-icon.svg"></button></a>`;
+      >Смотреть<img src="https://static.tildacdn.com/tild6235-6638-4839-a132-653362626135/youtube-icon.svg"></button></a>`;
 
 let nowDate = '2019-10-25';
 let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
