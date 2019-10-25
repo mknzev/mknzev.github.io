@@ -1,4 +1,3 @@
-export
 
 const services = ["4406660", "4406662", "4406663", "4406661"],
   targetEls = [
@@ -13,7 +12,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer xka55ctkec2gtebtubz8, User 05215ad9411da5aa82a33197348b4fc4"
+        "Bearer xka55ctkec2gtebtubz8, User 77d14b726ddd750b3018691007188192"
     }
   },
   htmlBtn = `
@@ -28,9 +27,9 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
                           font-family: Graphik;
                           color: red;
                           font-weight: bold;"
-      >Смотреть<img src="https://static.tildacdn.com/tild6235-6638-4839-a132-653362626135/youtube-icon.svg"></button></a>`;
+      >Смотреть вебинар ▶</button></a>`;
 
-let nowDate = '2019-10-25';
+let nowDate = new Date().toJSON().slice(0, 10);
 let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
     nowDate +
     "&till=" +
