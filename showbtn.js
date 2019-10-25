@@ -27,7 +27,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
                           font-family: Graphik;
                           color: red;
                           font-weight: bold;"
-      >Смотреть вебинар ▶</button></a>`;
+      >Смотреть ▶</button></a>`;
 
 let nowDate = new Date().toJSON().slice(0, 10);
 let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
