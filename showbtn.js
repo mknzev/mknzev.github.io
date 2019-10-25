@@ -16,18 +16,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
     }
   },
   htmlBtn = `
-      <a href="#" target="_blank">
-      <button id="button" style="position: absolute;
-                          z-index: 1;
-                          margin-left: -190px;
-                          margin-top: 80px;
-                          background: #00000000;
-                          border-color: red;
-                          border-radius: 7px;
-                          font-family: Graphik;
-                          color: red;
-                          font-weight: bold;"
-      >Смотреть ▶</button></a>`;
+    <a href="#" target="_blank" style="position: absolute;z-index: 1;margin-left: -275px;margin-top: 80px;width: 225px;height: 65px;display:flex;justify-content: space-between;/* border-color: red; */"><p style="color: white;font-weight: bold;line-height: 28px;" class="__web-inspector-hide-shortcut__">Смотри сейчас ⟶</p><button id="button" style="background: #00000000;border: 1px solid red;/* border-color: red; */border-radius: 7px;font-family: Graphik;color: red;/* font-weight: bold; */text-align: left;" class="">присоединиться к прямому эфиру &gt;</button> </a>`;
 
 let nowDate = new Date().toJSON().slice(0, 10);
 let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
