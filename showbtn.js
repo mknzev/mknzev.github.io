@@ -34,7 +34,10 @@ function showButton(i) {
   document
     .querySelector(targetEls[i])
     .insertAdjacentHTML("beforeend", htmlBtn);
-    targetEls[i].querySelector('a').setAttribute('href', targetHref[i]);
+  document
+    .querySelector(targetEls[i])
+    .querySelector('a')
+    .setAttribute('href', targetHref[i]);
 }
 
 fetch(reServices)
