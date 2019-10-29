@@ -6,7 +6,12 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
     ".tn-elem__1367186951563909039039 div",
     ".tn-elem__1367186951563909136703 div"
   ],
-  targetHref = ["", "", "", ""],
+  targetHref = [
+    "https://yclients.clickmeeting.com/bazovie-nastroiki?_ga=2.109165056.429975423.1569227313-1958504337.1568626668&_gac=1.204278180.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE",
+    "https://yclients.clickmeeting.com/skladskoi-uchyot?_ga=2.114930306.429975423.1569227313-1958504337.1568626668&_gac=1.3941124.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE",
+    "https://yclients.clickmeeting.com/finansi-i-analitika-raschet-zarabotnoi-plati?_ga=2.84720284.429975423.1569227313-1958504337.1568626668&_gac=1.207751462.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE",
+    "https://yclients.clickmeeting.com/programma-loyal-nosti?_ga=2.84720284.429975423.1569227313-1958504337.1568626668&_gac=1.207751462.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE"
+  ],
   init = {
     method: "GET",
     headers: {
@@ -16,7 +21,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
     }
   },
   htmlBtn = `
-    <a href="#" target="_blank" style="position: absolute;z-index: 1;margin-left: -190px;margin-top: 80px;width: 133px;height: 65px;display:flex;justify-content: space-between;/* border-color: red; */"><p style="color: white;font-weight: bold;line-height: 28px;" class="__web-inspector-hide-shortcut__"></p><button id="button" style="background: #00000000;border: 1px solid red;/* border-color: red; */border-radius: 4px;font-family: Graphik;color: red;/* font-weight: bold; */text-align: left;" class="">присоединиться к прямому эфиру &gt;</button> </a>`;
+    <a href="#" target="_blank" style="position: absolute;z-index: 1;margin-left: -124px;margin-top: 47px;width: 133px;height: 22px;display:flex;justify-content: space-between;/* border-color: red; */"><button id="button" style="background: red;border: 1px solid red;/* border-color: red; */border-radius: 4px;font-family: Graphik;color: white;font-weight: bold;text-align: left;" class="">В ЭФИРЕ</button></a>`;
 
 let nowDate = new Date().toJSON().slice(0, 10);
 let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
@@ -29,6 +34,7 @@ function showButton(i) {
   document
     .querySelector(targetEls[i])
     .insertAdjacentHTML("beforeend", htmlBtn);
+    targetEls[i].querySelector('a').setAttribute('href', targetHref[i]);
 }
 
 fetch(reServices)
