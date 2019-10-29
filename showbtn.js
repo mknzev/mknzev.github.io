@@ -22,7 +22,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
   },
   htmlBtn = `
     <a href="` +
-      targerHref[i] +
+      targetHref[i] +
       `" target="_blank" style="position: absolute;z-index: 1;margin-left: -124px;margin-top: 47px;width: 133px;height: 22px;display:flex;justify-content: space-between;/* border-color: red; */"><button id="button" style="background: red;border: 1px solid red;/* border-color: red; */border-radius: 4px;font-family: Graphik;color: white;font-weight: bold;text-align: left;" class="">В ЭФИРЕ</button></a>`;
 
 let nowDate = new Date().toJSON().slice(0, 10);
