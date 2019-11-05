@@ -39,18 +39,17 @@ function showButton(i) {
     .querySelector(targetEls[i])
     .querySelector('a')
     .setAttribute('href', targetHref[i]);
-}
+};
 
 fetch(reServices)
   .then(response => response.json())
   .then(data => {
-    console.log(data.data);
     for (let i in data.data) {
       let serDate = new Date().getTime() / 1000 - new Date(data.data[i].date) / 1000;
       for (let h in services) {
         if (data.data[i].service_id == services[h]) {
           console.log(11);
-          console.log(serDate)
+          console.log(serDate);
           if (0 < serDate && serDate < data.data[i].length) {
             showButton(h);
             console.log(13);
@@ -58,4 +57,4 @@ fetch(reServices)
         }
       }
     }
-  })
+  });
