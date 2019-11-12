@@ -1,3 +1,5 @@
 .mknzev.github.code-workspace
 .gitignore
 /.vscode
+dev
+.vscodeignore
