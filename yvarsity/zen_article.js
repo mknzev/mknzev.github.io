@@ -13,20 +13,7 @@ new Request(
 
 function showArticle() {
 addEl(el, `<div class="article-body markdown">${arr}</div>`);
-addEl(
-  head,
-  `<link rel="stylesheet" href="https://p18.zdassets.com/hc/theming_assets/708440/358822/style.css">`
-);
-addEl(
-  head,
-  `
-    <style>
-    .main {
-      max-width: 680px;
-      margin:auto;
-    }
-    </style>`
-);
+addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
 }
 function addEl(el, html) {
 el.insertAdjacentHTML("beforeend", html);
