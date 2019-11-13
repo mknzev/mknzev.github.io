@@ -21,7 +21,7 @@ const s = [
     .split(".")
     .reverse()
     .join("-"),
-  htmlStyle = ` #forButton {
+  css = ` #forButton {
       position: absolute;
       z-index: 1;
       margin-left: 215px;
@@ -39,17 +39,14 @@ const s = [
       font-weight: bold;
       text-align: left;
     }`;
-  htmlBtn = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
+  html = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
+  
+document.querySelector('style').insertAdjacentText('beforeend', htmlStyle)
 
 function showButton(i) {
-  document
-    .querySelector('style')
-    .insertAdjacentText('beforeend', htmlStyle)
-  document
-    .querySelector(el[i])
-    .querySelector("a")
-    .insertAdjacentHTML("afterbegin", htmlBtn)
-    .setAttribute("href", url[i]);
+  let elem = document.querySelector(el[i] a)
+    elem.insertAdjacentHTML("afterbegin", htmlBtn)
+    elem.setAttribute("href", url[i]);
 }
 
 fetch(
@@ -66,15 +63,15 @@ fetch(
   .then(response => response.json())
   .then(data => {
     let yc = data.data;
-    console.log(yc);
-    for (let i in yc) {
-      let yd = new Date().getTime() / 1000 - new Date(yc[i].date) / 1000;
-      for (let h in s) {
-        if (yc[i].service_id == s[h]) {
-          console.log(yd);
-          if (0 < yd && yd < yc[i].length) {
-            showButton(h);
-            console.log("Должен показать кнопку!");
+      for (let i in yc) {
+       let yd = new Date().getTime() / 1000 - new Date(yc[i].date) / 1000;
+        for (let h in s) {
+          if (yc[i].service_id == s[h]) {
+             if (0 < yd && yd < yc[i].length) {
+              console.log("Должен показать кнопку!");
+              document.querySelector('style').insertAdjacentText('beforeend', htmlStyle);
+              showButton(h);
+            
           }
         }
       }
