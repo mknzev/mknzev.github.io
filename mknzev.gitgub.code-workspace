@@ -6,5 +6,8 @@
 		{
 			"path": "/Users/mk/dev"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dev"
+	}
 }

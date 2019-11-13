@@ -18,6 +18,7 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
       Authorization:
         "Bearer xka55ctkec2gtebtubz8, User d7a3fa63c301582477d7315f81de85a3"
     }
+
   },
   htmlBtn = `
     <div style="position: absolute;z-index: 1;margin-left: 215px;margin-top: 45px;margin-top: 46px;width: 133px;height: 22px;"><button id="button" style="background: red;border: 1px solid red;border-radius: 4px;font-family: 'GraphikLLCT',Arial,sans-serif;color: white;font-weight: bold;text-align: left;" class="">В ЭФИРЕ</button></div>`;
