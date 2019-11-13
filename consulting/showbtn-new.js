@@ -31,7 +31,7 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
     font-weight: bold;
     text-align: center;
   },
-  #redRound {
+  #redBall {
     background: red;
     width: 10px;
     height: 10px;
