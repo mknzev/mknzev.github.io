@@ -44,7 +44,7 @@ const s = [
 document.querySelector('style').insertAdjacentText('beforeend', htmlStyle)
 
 function showButton(i) {
-  let elem = document.querySelector(el[i] a)
+  let elem = document.querySelector(`${el[i]} a`)
     elem.insertAdjacentHTML("afterbegin", htmlBtn)
     elem.setAttribute("href", url[i]);
 }
