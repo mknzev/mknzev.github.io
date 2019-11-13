@@ -11,10 +11,14 @@ new Request(
 .then(data => (arr = data.article.body))
 .then(() => showArticle());
 
-function showArticle() {
+function loadContent() {
 addEl(el, `<div class="article-body markdown">${arr}</div>`);
 addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
+fooDisable();
 }
 function addEl(el, html) {
 el.insertAdjacentHTML("beforeend", html);
+}
+function fooDisable() {
+    document.querySelector('#tildacopy').remove();
 }
