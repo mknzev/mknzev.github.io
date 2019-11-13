@@ -30,6 +30,7 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
     color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 0.8em;
   },
   #redBall {
     background: red;
