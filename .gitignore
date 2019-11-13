@@ -1,7 +1,7 @@
-**mknzev.github.code-workspace
-**/.vscode
-**/node_modules
+mknzev.github.code-workspace
+/.vscode
 /node_modules
 .vscodeignore
 package-lock.json
 np
+.DS_Store`
