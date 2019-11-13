@@ -11,7 +11,7 @@
   
   body {
     color: #555555;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Graphik LC TT', Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: lighter;
     line-height: 1.5;
@@ -33,7 +33,7 @@
   
   a {
     color: #158ec2;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Graphik LC TT', Helvetica, Arial, sans-serif;
     text-decoration: none;
   }
   a:hover {
@@ -474,7 +474,7 @@
   
   body {
     color: #555555;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Graphik LC TT', Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: lighter;
     line-height: 1.5;
@@ -497,7 +497,7 @@
   
   a {
     color: #158ec2;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Graphik LC TT', Arial, sans-serif;
     text-decoration: none;
   }
   a:hover {
