@@ -9,7 +9,8 @@ new Request(
 )
 .then(responce => responce.json())
 .then(data => (arr = data.article.body))
-.then(() => showArticle());
+.then(() => loadContent());
+
 
 function loadContent() {
 addEl(el, `<div class="article-body markdown">${arr}</div>`);
