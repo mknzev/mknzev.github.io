@@ -23,12 +23,6 @@ d = new Date()
 .join("-"),
 css = ` #forButton {
 position: absolute;
-z-index: 1;
-margin-left: 215px;
-margin-top: 45px;
-margin-top: 46px;
-width: 133px;
-height: 22px;
 }
 #button {
 background: red;
@@ -37,7 +31,7 @@ border-radius: 4px;
 font-family: 'GraphikLLCT',Arial,sans-serif;
 color: white;
 font-weight: bold;
-text-align: left;
+text-align: center;
 }`;
 html = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
 
