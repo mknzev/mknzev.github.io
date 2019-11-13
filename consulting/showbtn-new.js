@@ -20,7 +20,7 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
   #forButton {
     position: absolute;
     top: 12%;
-    right: 15%;
+    right: 16%;
   }
   #button {
     background: red;
@@ -30,8 +30,18 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
     color: white;
     font-weight: bold;
     text-align: center;
-  }`,
-  html = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
+  },
+  #redRound {
+    background: red;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.2em;
+    margin-top: 0.5em;
+    vertical-align: inherit;
+    float: left;
+    border-radius: 1vh;
+}`
+  html = `<div id="forButton"><div id='redBall'></div><button id="button"class="">В ЭФИРЕ</button></div>`;
 
 
   function showButton(i) {
