@@ -1,4 +1,7 @@
 **mknzev.github.code-workspace
 **/.vscode
-dev
+**/node_modules
+/node_modules
 .vscodeignore
+package-lock.json
+np
