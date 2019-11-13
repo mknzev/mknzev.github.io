@@ -32,11 +32,7 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
     text-align: center;
   }`,
   html = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
-
-
-  function checkLength(i) {
-    if
-  }
+  
 
   function showButton(i) {
   let elem = document.querySelector(`${el[i]} a`);
