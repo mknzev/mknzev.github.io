@@ -32,7 +32,7 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
     text-align: center;
   }`,
   html = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
-  
+
 
   function showButton(i) {
   let elem = document.querySelector(`${el[i]} a`);
@@ -63,9 +63,8 @@ fetch(
       let yd = new Date().getTime() / 1000 - new Date(yc[i].date) / 1000;
       for (let h in s) {
         if ((+yc[i].service_id === +s[h]) && (0 < yd && yd < yc[i].length)) {
-            addStyle();
-            showButton(h);
-          }
+          addStyle();
+          showButton(h);
         }
       }
     }
