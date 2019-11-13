@@ -40,27 +40,18 @@ const s = [
       text-align: left;
     }`;
   html = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
-  
-document.querySelector('style').insertAdjacentText('beforeend', htmlStyle)
 
 function showButton(i) {
-  let elem = document.querySelector(`${el[i]} a`)
-    elem.insertAdjacentHTML("afterbegin", htmlBtn)
-    elem.setAttribute("href", url[i]);
+  let elem = document.querySelector(`${el[i]} a`);
+    elem.insertAdjacentHTML("afterbegin", html);
+    elem.setAttribute("href", url[i]);;
 }
 
-fetch(
-  new Request(
-    `https://api.yclients.com/api/v1/activity/85062/history_search/?from=${d}&till=${d}`,
-    {
-      headers: {
-        Authorization:
-          "Bearer xka55ctkec2gtebtubz8, User d7a3fa63c301582477d7315f81de85a3"
-      }
-    }
-  )
-)
-  .then(response => response.json())
+fetch(new Request(`https://api.yclients.com/api/v1/activity/85062/history_search/?from=${d}&till=${d}`,  { headers: {
+                    Authorization: "Bearer xka55ctkec2gtebtubz8, User d7a3fa63c301582477d7315f81de85a3"
+                 }})
+      )
+.then(response => response.json())
   .then(data => {
     let yc = data.data;
       for (let i in yc) {
