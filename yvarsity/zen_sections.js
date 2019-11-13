@@ -4,17 +4,18 @@ const el = document.querySelector('.list'),
 let zen = [];
 fetch(getSection)
   .then(response => response.json())
-  .then(data => {
-    for (let i in zen) {
+  .then(data => zen = data.data)
+  .then()(zen) => {
+   for (let i in zen) {
       show(i, zen);
-      fooDisable();
+     // fooDisable();
     };
   });
 
-fooDisable();
-function fooDisable() {
-  document.querySelector('#tildacopy').remove();
-}
+// fooDisable();
+// function fooDisable() {
+//   document.querySelector('#tildacopy').remove();
+// }
 
 function show(i, zen) {
     addEl(el,`<li><a href=${zen[i].html_url} target='_blank'>${zen[i].title}</a></li>`);
