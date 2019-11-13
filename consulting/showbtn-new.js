@@ -1,4 +1,9 @@
-const s = ["4406660", "4406662", "4406663", "4406661"],
+const s = [
+        "4406660",
+        "4406662",
+        "4406663",
+        "4406661"
+      ],
   el = [
     ".tn-elem__1367186951563904650693 div",
     ".tn-elem__1367186951563908992511 div",
@@ -38,14 +43,18 @@ const s = ["4406660", "4406662", "4406663", "4406661"],
 	 `;
 htmlBtn = `<div id="forButton"><button id="button"class="">В ЭФИРЕ</button></div>`;
 
+function styleButton() {
+  
+}
+
 function showButton(i) {
+  document
+    .querySelector('style')
+    .insertAdjacentText('beforeend', htmlStyle)
   document
     .querySelector(el[i])
     .querySelector("a")
     .insertAdjacentHTML("afterbegin", htmlBtn);
-  document
-    .querySelector(el[i])
-    .querySelector("a")
     .setAttribute("href", targetHref[i]);
 }
 
