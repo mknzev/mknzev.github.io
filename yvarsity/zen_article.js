@@ -13,10 +13,12 @@ function showArticle() {
 el.insertAdjacentHTML('beforeend', `<div class="article-body markdown">${arr}</div>`);
 head.insertAdjacentHTML('beforeend',`<link rel="stylesheet" href="https://p18.zdassets.com/hc/theming_assets/708440/358822/style.css">`);
 head.insertAdjacentHTML('beforeend', `
-<style>
-    .main {
-        max-width: 680px;
-        margin:auto;
-    }
-</style>`);
+    <style>
+        .main {
+            max-width: 680px;
+            margin:auto;
+        }
+    </style>`);
 }
+
+function addEl(el, html) el.el.insertAdjacentHTML('beforeend', html);
