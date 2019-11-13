@@ -55,7 +55,7 @@ function showButton(i) {
     .querySelector(el[i])
     .querySelector("a")
     .insertAdjacentHTML("afterbegin", htmlBtn);
-    .setAttribute("href", targetHref[i]);
+    .setAttribute("href", url[i]);
 }
 
 fetch(
