@@ -11,12 +11,11 @@ fetch(
   .then(data => (arr = data.article.body))
   .then(() => loadContent());
 
+
+
 function loadContent() {
-  addEl(el, `<div class="article-body markdown">${arr}</div>`);
-  addEl(
-    head,
-    `<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`
-  );
+  addEl(el,`<div class="article-body markdown">${arr}</div>`);
+  addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
   fooDisable();
 }
 function addEl(el, html) {
