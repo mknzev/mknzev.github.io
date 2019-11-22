@@ -1,5 +1,4 @@
 const services = ["4406660", "4406662", "4406663", "4406661"],
-
   targetEls = [
     ".tn-elem__1367186951563904650693 div",
     ".tn-elem__1367186951563908992511 div",
@@ -23,8 +22,8 @@ const services = ["4406660", "4406662", "4406663", "4406661"],
   htmlBtn = `
     <div style="position: absolute;z-index: 1;margin-left: 215px;margin-top: 45px;margin-top: 46px;width: 133px;height: 22px;"><button id="button" style="background: red;border: 1px solid red;border-radius: 4px;font-family: 'GraphikLLCT',Arial,sans-serif;color: white;font-weight: bold;text-align: left;" class="">В ЭФИРЕ</button></div>`;
 
-let nowDate = new Date().toJSON().slice(0, 10);
-let url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
+let nowDate = new Date().toJSON().slice(0, 10),
+    url = "https://api.yclients.com/api/v1/activity/85062/history_search/?from=" +
     nowDate +
     "&till=" +
     nowDate,
@@ -44,16 +43,12 @@ function showButton(i) {
 fetch(reServices)
   .then(response => response.json())
   .then(data => {
-    console.log(data.data);
     for (let i in data.data) {
       let serDate = new Date().getTime() / 1000 - new Date(data.data[i].date) / 1000;
       for (let h in services) {
         if (data.data[i].service_id == services[h]) {
-          console.log(11);
-          console.log(serDate)
           if (0 < serDate && serDate < data.data[i].length) {
             showButton(h);
-            console.log(13);
           }
         }
       }
