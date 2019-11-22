@@ -87,8 +87,6 @@ function checkActivity() {
   
 }
 
-  
-}
     for (let activity of activites) {
       for (let id in ) {
         if ((+yc[i].service_id === +s[h]) && checkTime(activity)) {
