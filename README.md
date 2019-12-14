@@ -1,5 +1,5 @@
 # 🦆 Worst Duck 🦆
-Object-disoriented dev end pet-projects.
+Object-disoriented dev and pet-project cemetеry
 
 !> Сайт будет пополняться инструкциями и скриптами для формы онлайн-записи. 
    После нового года=)
