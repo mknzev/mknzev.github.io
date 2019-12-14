@@ -5,6 +5,6 @@ Object-disoriented dev end pet-projects.
   
   * JS snippet to get articles from ZenDesk knowledge base by API
 
-## [mknzev.github.io](mknzev.github.io)
+## [mknzev.github.io](https://mknzev.github.io)
   
   * CSS and JS snippets for YC booking form
