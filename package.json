@@ -16,7 +16,5 @@
     "url": "https://github.com/mknzev/mknzev.github.io/issues"
   },
   "homepage": "https://github.com/mknzev/mknzev.github.io#readme",
-  "devDependencies": {
-    "docpress": "0.8.0"
-  }
+  "devDependencies": {}
 }
