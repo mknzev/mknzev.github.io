@@ -45,7 +45,7 @@ div#app:empty:before {
 
 .search .search-keyword,
 .search a:hover {
-    color: #47e1f2 text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    color: #47e1f2
 }
 
 .search .search-keyword {
@@ -79,7 +79,7 @@ kbd {
     line-height: 12px;
     margin-bottom: 3px;
     padding: 3px 5px;
-    vertical-align: middle text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    vertical-align: middle
 }
 
 .app-nav {
@@ -116,11 +116,11 @@ kbd {
 
 .app-nav a.active,
 .app-nav a:hover {
-    color: #47e1f2 text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    color: #47e1f2
 }
 
 .app-nav a.active {
-    border-bottom: 2px solid #47e1f2 text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    border-bottom: 2px solid #47e1f2
 }
 
 .app-nav li {
@@ -144,7 +144,7 @@ kbd {
     right: -15px;
     text-align: left;
     top: 100%;
-    white-space: nowrap text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    white-space: nowrap
 }
 
 .app-nav li ul li {
@@ -251,7 +251,7 @@ main {
 .sidebar li>p {
     font-weight: 700;
     margin: 25px 0 0;
-    color: #47e1f2 text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    color: #47e1f2
 }
 
 .sidebar ul,
@@ -268,7 +268,7 @@ main {
     text-overflow: ellipsis;
     white-space: nowrap;
     border-bottom: none;
-    display: block text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    display: block
 }
 
 .sidebar ul li a:hover {
@@ -322,7 +322,7 @@ main {
     display: block;
     margin-bottom: 5px;
     width: 24px;
-    height: 3px text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    height: 3px
 }
 
 body.sticky .sidebar,
