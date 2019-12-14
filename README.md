@@ -1,3 +1,10 @@
-# mknzev.github.io
+# 🦆 Worst Duck 🦆
+Object-disoriented dev end pet-projects.
 
-Test VS Docsify
+## [YVARSITY](https://github.com/mknzev/mknzev.github.io/tree/master/yvarsity) 
+  
+  * JS snippet to get articles from ZenDesk knowledge base by API
+
+## [mknzev.github.io](mknzev.github.io)
+  
+  * CSS and JS snippets for YC booking form
