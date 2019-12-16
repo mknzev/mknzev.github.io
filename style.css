@@ -133,8 +133,7 @@ kbd {
 }
 
 .app-nav li ul {
-    background-color: transparent !important;
-    background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
+    background-color: #081020;
     border: 1px solid #ddd;
     border-bottom-color: #ccc;
     border-radius: 4px;
@@ -603,7 +602,6 @@ section.cover .cover-main>p:last-child a {
     border-radius: 2rem;
     box-sizing: border-box;
     color: #47e1f2;
-    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
     display: inline-block;
     font-size: 1rem;
     letter-spacing: .1rem;
@@ -611,6 +609,7 @@ section.cover .cover-main>p:last-child a {
     padding: .75em 2rem;
     text-decoration: none;
     transition: all .15s ease-in;
+    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
 }
 
 section.cover .cover-main>p:last-child a:last-child {
@@ -655,8 +654,7 @@ section.cover.has-mask .mask {
 
 .sidebar,
 body {
-    background-color: transparent !important;
-    background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
+    background-color: #081020
 }
 
 .sidebar {
@@ -925,8 +923,7 @@ body {
 }
 
 .markdown-section pre>code {
-    background-color: transparent !important;
-  background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
+    background-color: #080820;
     border-radius: 2px;
     color: #ccc;
     display: block;
