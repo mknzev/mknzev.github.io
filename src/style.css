@@ -22,7 +22,7 @@ div#app {
 }
 
 div#app:empty:before {
-    content: "Loading..."
+    content: '';
 }
 
 .emoji {
@@ -40,7 +40,8 @@ div#app:empty:before {
     top: 0;
     transition: width .2s, opacity .4s;
     width: 0;
-    z-index: 5
+    z-index: 5;
+    filter: drop-shadow(0 0 20px #03edf9);
 }
 
 .search .search-keyword,
@@ -189,7 +190,8 @@ kbd {
     color: #fc28a8;
     fill: #47e1f2;
     height: 80px;
-    width: 80px
+    width: 80px;
+    filter: drop-shadow(0 0 5px #03edf9);
 }
 
 .github-corner:hover .octo-arm {
@@ -277,7 +279,8 @@ main {
 .sidebar ul li a:hover {
     text-decoration: underline;
     color: #ff2e89;
-    transition: all .3s
+    transition: all .3s;
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
 }
 
 .sidebar ul li ul {
@@ -326,7 +329,6 @@ main {
     margin-bottom: 5px;
     width: 24px;
     height: 3px;
-    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
 }
 
 body.sticky .sidebar,
@@ -658,7 +660,7 @@ body {
 }
 
 .sidebar {
-    color: #364149
+    color: #1c384d
 }
 
 .sidebar li {
