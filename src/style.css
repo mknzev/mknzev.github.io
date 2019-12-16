@@ -61,7 +61,7 @@ html {
 
 body {
     color: #f4eee4;
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-family: Roboto, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     font-size: 15px;
     letter-spacing: 0;
     margin: 0;
@@ -189,8 +189,8 @@ kbd {
 .github-corner svg {
     color: #fc28a8;
     fill: #47e1f2;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     filter: drop-shadow(0 0 5px #03edf9);
 }
 
