@@ -672,6 +672,7 @@ body {
 .sidebar ul li.active>a {
     color: #ff2e89;
     font-weight: 700
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
 }
 
 .app-sub-sidebar .section-link:before {
@@ -712,11 +713,13 @@ body {
     color: #ff2e89;
     -webkit-text-decoration-color: #ff2e89;
     text-decoration-color: #ff2e89
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
 }
 
 .markdown-section p a:hover code,
 .markdown-section ul a:hover code {
     color: #ff2e89
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
 }
 
 .markdown-section a:hover {
