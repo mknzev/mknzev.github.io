@@ -10,6 +10,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./docs/src/loading.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
     <link rel="stylesheet" href="./docs/src/style.css">
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1.17.1/themes/prism-funky.css"> -->
 </head>
@@ -134,11 +135,17 @@
                 crossChapter: true,
             },
             tabs: {
-                persist: true,     
-                sync: true,     
-                theme: 'material', 
-                tabComments: true,     
-                tabHeadings: true   
+                persist: true,
+                sync: true,
+                theme: 'material',
+                tabComments: true,
+                tabHeadings: true
+            },
+            search: {
+                placeholder: 'найти.. ',
+                noData: 'ничего',
+                depth: 4,
+                path: 'auto'
             }
         }
     </script>
