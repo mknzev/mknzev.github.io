@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600");
+
+:root {
+    --text: #47e1f2;
+    --bless-text: #03edf975; 
+    --glow-text: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
+    --docsify-example-panels-document-width: 100%!important;
+    --docsify-example-panels-right-panel-width: 50%!important;
+    --docsify-example-panels-left-panel-width: 50%!important;
+}
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -44,9 +54,16 @@ div#app:empty:before {
     filter: drop-shadow(0 0 20px #03edf9);
 }
 
-.search .search-keyword,
+.search {
+    border-bottom: #df9!important;
+}
+
+.search .search-keyword {
+    color: #ff2e89;
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
+}
 .search a:hover {
-    color: #47e1f2;
+    color: #03edf9;
     text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 12px #03edf975;
 }
 
@@ -54,6 +71,17 @@ div#app:empty:before {
     font-style: normal
 }
 
+input[type="search"] {
+    background: #081020;
+    color: #ff2e89;
+}
+input[type="search"]::placeholder {
+    color:var(--bless-text);
+}
+.search input:focus {
+    box-shadow: 0 0 5px var(--theme-color, 03edf975)!important;
+    border: 1px solid var(--theme-color, #03edf9)!important;
+}
 body,
 html {
     height: 100%
@@ -66,7 +94,7 @@ body {
     letter-spacing: 0;
     margin: 0;
     overflow-x: hidden;
-    line-height: 1.9
+    line-height: 1.9;
 }
 
 img {
@@ -134,7 +162,7 @@ kbd {
 }
 
 .app-nav li ul {
-    background-color: #081020;
+    background-image: linear-gradient(to bottom, #2a2139 50%, #34294f);
     border: 1px solid #ddd;
     border-bottom-color: #ccc;
     border-radius: 4px;
@@ -265,7 +293,7 @@ main {
 }
 
 .sidebar ul li a {
-    color: #008d9d;
+    color: #47e1f2;
     font-size: 14px;
     font-weight: 400;
     overflow: hidden;
@@ -660,7 +688,7 @@ body {
 }
 
 .sidebar {
-    color: #1c384d
+    color: var(--text)
 }
 
 .sidebar li {
@@ -832,11 +860,12 @@ body {
 .token.comment,
 .token.doctype,
 .token.prolog {
-    color: #8e908c
+    color: #6fec6f;
+    text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
 }
 
 .token.namespace {
-    opacity: .7
+    opacity: .7;
 }
 
 .token.boolean,
@@ -845,7 +874,7 @@ body {
 }
 
 .token.punctuation {
-    color: #525252
+    color: #f97e72;
 }
 
 .token.property {
@@ -853,48 +882,53 @@ body {
 }
 
 .token.tag {
-    color: #2973b7
+    color: #72f1b8;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #35664e75;
 }
 
 .token.string {
-    color: #e5b567
+   color: #f4eee4;
+    text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 5px #f39f0575;
 }
 
 .token.selector {
-    color: #6679cc
+    color: #72f1b8;
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475;
 }
 
 .token.attr-name {
-    color: #2973b7
+    color: #72f1b8;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475;
 }
 
 .language-css .token.string,
 .style .token.string,
 .token.entity,
-.token.url {
-    color: #22a2c9
+.token.url,.template-string {
+   color: #6d77b3;
 }
 
 .token.attr-value,
 .token.control,
 .token.directive,
 .token.unit {
-    color: #47e1f2
+    color: #6d77b3;
 }
 
 .token.keyword {
-    color: #a71d5d
-}
+    color: #72f1b8;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 28px #23443375;
+  }
 
 .token.atrule,
 .token.regex,
 .token.statement {
-    color: #22a2c9
+   color: #a71d5d
 }
 
 .token.placeholder,
 .token.variable {
-    color: #3d8fd1
+    color: #533dd1
 }
 
 .token.deleted {
@@ -924,6 +958,19 @@ body {
     cursor: help
 }
 
+.token.function {
+    color: #36f9f6;
+}`
+
+.token.class-name {
+    color: #f97e72;
+  text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
+}
+token.parametr {
+    color: #fdfdfd;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+
+}
 .markdown-section pre>code {
     background-color: #080820;
     border-radius: 2px;
@@ -947,7 +994,10 @@ body {
 code .token {
     min-height: 1.5rem
 }
-
+.lang-js#text{
+    color: #fdfdfd;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+}
 pre:after {
     color: #ccc;
     content: attr(data-lang);
@@ -1182,7 +1232,7 @@ body .pagination-item a {
 }
 
 body .codecopy .codecopy-btn {
-    color: #fff;
+    color: #ff2e89;
     background-image: linear-gradient(-180deg, #062f47, #1b1f23 90%);
     border: 1px solid rgba(27, 31, 35, .2);
     background-position: -1px -1px;
@@ -1204,4 +1254,9 @@ body .codecopy .codecopy-btn:active {
 
 body .codecopy .codecopy-btn-icon {
     fill: #fff
+}
+
+.docsify-example-panel.right-panel,
+.docsify-example-panel.left-panel {
+    width: 50%;
 }
