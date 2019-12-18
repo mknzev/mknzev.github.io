@@ -11,11 +11,6 @@ fetch(getSection)
     };
   });
 
-footerDisable();
-function footerDisable() {
-  document.querySelector('#tildacopy').remove();
-}
-
 function show(i, zen) {
     addEl(el,`<li><a href=${zen[i].html_url} target='_blank'>${zen[i].title}</a></li>`);
     addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
