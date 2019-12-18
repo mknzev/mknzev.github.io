@@ -5,6 +5,7 @@ let zen = [];
 fetch(getSection)
   .then(response => response.json())
   .then(data => {
+    let zen = data.articles;
     for (let i in zen) {
       show(i, zen);
       fooDisable();
