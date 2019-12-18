@@ -10,11 +10,11 @@ fetch(getSection)
     for (let i in zen) {
       show(i, zen);
     };
+    addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
   });
 
 function show(i, zen) {
     addEl(el,`<li><a href=${zen[i].html_url} target='_blank'>${zen[i].title}</a></li>`);
-    addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
   };
 
 function addEl(el, html) {
