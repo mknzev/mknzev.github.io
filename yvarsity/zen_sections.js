@@ -8,12 +8,11 @@ fetch(getSection)
     let zen = data.articles;
     for (let i in zen) {
       show(i, zen);
-      fooDisable();
     };
   });
 
-fooDisable();
-function fooDisable() {
+footerDisable();
+function footerDisable() {
   document.querySelector('#tildacopy').remove();
 }
 
