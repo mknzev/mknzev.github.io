@@ -1,4 +1,5 @@
 const el = document.querySelector('.list'), 
+       head = document.querySelector('head'),
       url = `https://yclients.zendesk.com/api/v2/help_center/ru/sections/${el.id}/articles.json`,
       getSection = new Request(url);
 let zen = [];
