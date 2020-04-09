@@ -776,7 +776,7 @@
     line-height: 1.7;
   }
   .markdown img {
-    max-width: 100%;
+    max-width: 740px;
   }
   .markdown hr {
     background-color: #eeeeee;
