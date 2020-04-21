@@ -31,8 +31,8 @@ const htmlBtn = `
     <div style="
       position: absolute;
       z-index: 1;
-      margin-left: 85px;
-      margin-top: 270px;
+      margin-left: 123px;
+      margin-top: 294px;
       width: 133px;
       height: 22px;">
      <button id="button" style="
@@ -42,7 +42,7 @@ const htmlBtn = `
         font-family: 'GraphikLLCT',Arial,sans-serif;
         color: white;
         font-weight: bold;
-        text-align: left;" class="">В ЭФИРЕ</button>
+        text-align: left;" class="">Смотреть сейчас</button>
     </div>`;
 
 const nowDate = new Date().toJSON().slice(0, 10);
