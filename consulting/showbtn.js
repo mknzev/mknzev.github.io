@@ -31,8 +31,8 @@ const htmlBtn = `
     <div style="
       position: absolute;
       z-index: 1;
-      margin-left: 123px;
-      margin-top: 294px;
+      margin-left: 40%;
+      margin-top: 97%;
       width: 133px;
       height: 22px;">
      <button id="button" style="
