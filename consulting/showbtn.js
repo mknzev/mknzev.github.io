@@ -1,15 +1,23 @@
-const services = ['4406660', '4406662', '4406663', '4406661'];
+const services = ['4406660', '4406662', '4406661', '5336652', '5336648', '4406663', '5336651', '5336650'];
 const targetEls = [
-  '.tn-elem__1367186951563904650693 div',
-  '.tn-elem__1367186951563908992511 div',
-  '.tn-elem__1367186951563909039039 div',
-  '.tn-elem__1367186951563909136703 div',
+  '.tn-elem__1764243101563904650693 div',
+  '.tn-elem__1764243101563908992511 div',
+  '.tn-elem__1764243101585924720018 div',
+  '.tn-elem__1764243101563909136703 div',
+  '.tn-elem__1764243101585924349845 div',
+  '.tn-elem__1764243101563909039039 div',
+  '.tn-elem__1764243101585924697511 div',
+  '.tn-elem__1764243101585924653782 div'
 ];
 const targetHref = [
-  'https://yclients.clickmeeting.com/bazovie-nastroiki?_ga=2.109165056.429975423.1569227313-1958504337.1568626668&_gac=1.204278180.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE',
-  'https://yclients.clickmeeting.com/skladskoi-uchyot?_ga=2.114930306.429975423.1569227313-1958504337.1568626668&_gac=1.3941124.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE',
-  'https://yclients.clickmeeting.com/finansi-i-analitika-raschet-zarabotnoi-plati?_ga=2.84720284.429975423.1569227313-1958504337.1568626668&_gac=1.207751462.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE',
-  'https://yclients.clickmeeting.com/programma-loyal-nosti?_ga=2.84720284.429975423.1569227313-1958504337.1568626668&_gac=1.207751462.1568884396.EAIaIQobChMIiqnDpMbc5AIVldGyCh35tAE6EAAYASAAEgKqf_D_BwE',
+  'https://yclients.clickmeeting.com/bazovie-nastroiki',
+  'https://yclients.clickmeeting.com/skladskoi-uchyot',
+  'https://yclients.clickmeeting.com/programma-loyal-nosti',
+  'https://yclients.clickmeeting.com/nastroyka-abonementov-i-sertifik',
+  'https://yclients.clickmeeting.com/onlayn-zapis-rasshirennye-nastro',
+  'https://yclients.clickmeeting.com/finansi-i-analitika-raschet-zarabotnoi-plati',
+  'https://yclients.clickmeeting.com/5-instrumenty-dlya-raboty-s-klie',
+  'https://yclients.clickmeeting.com/organizatsiya-i-pravila-raboty-s'
 ];
 const init = {
   method: 'GET',
