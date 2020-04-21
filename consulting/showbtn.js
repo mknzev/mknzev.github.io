@@ -28,7 +28,22 @@ const init = {
   },
 };
 const htmlBtn = `
-    <div style="position: absolute;z-index: 1;margin-left: 215px;margin-top: 45px;margin-top: 46px;width: 133px;height: 22px;"><button id="button" style="background: red;border: 1px solid red;border-radius: 4px;font-family: 'GraphikLLCT',Arial,sans-serif;color: white;font-weight: bold;text-align: left;" class="">В ЭФИРЕ</button></div>`;
+    <div style="
+      position: absolute;
+      z-index: 1;
+      margin-left: 215px;
+      margin-top: 45px;
+      width: 133px;
+      height: 22px;">
+     <button id="button" style="
+        background: red;
+        border: 1px solid red;
+        border-radius: 4px;
+        font-family: 'GraphikLLCT',Arial,sans-serif;
+        color: white;
+        font-weight: bold;
+        text-align: left;" class="">В ЭФИРЕ</button>
+    </div>`;
 
 const nowDate = new Date().toJSON().slice(0, 10);
 const url = `https://api.yclients.com/api/v1/activity/85062/history_search/?from=${
