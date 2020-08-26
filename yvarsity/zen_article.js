@@ -22,5 +22,5 @@ function addEl(el, html) {
   el.insertAdjacentHTML("beforeend", html);
 }
 function fooDisable() {
-  document.querySelector(".t-tildalabe").remove();
+  document.querySelector(".t-tildalabel").remove();
 }
