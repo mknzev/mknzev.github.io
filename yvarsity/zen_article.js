@@ -28,11 +28,7 @@ function loadContent() {
                 display: none;
             }
             </style>`);
-  fooDisable();
 }
 function addEl(el, html) {
   el.insertAdjacentHTML("beforeend", html);
-}
-function fooDisable() {
-  document.querySelector('.t-tildalabel').onload = document.querySelector('.t-tildalabel').remove()
 }
