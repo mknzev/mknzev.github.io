@@ -15,7 +15,7 @@ fetch(
 
 function loadContent() {
   addEl(el,`<div class="article-body markdown">${arr}</div>`);
-  addEl(head,`<link rel="stylesheet" href="https://mknzev.github.io/yvarsity/style.css">`);
+  addEl(head,`<link rel="stylesheet" href="https://p18.zdassets.com/hc/theming_assets/708440/358822/style.css">`);
   fooDisable();
 }
 function addEl(el, html) {
