@@ -16,6 +16,18 @@ fetch(
 function loadContent() {
   addEl(el,`<div class="article-body markdown">${arr}</div>`);
   addEl(head,`<link rel="stylesheet" href="https://p18.zdassets.com/hc/theming_assets/708440/358822/style.css">`);
+  addEl(el,` <style>
+             h1, h2, h3, h4, h5, h6 {
+                 margin-top: 50px;
+            } 
+            .main {
+                max-width: 750px;
+                margin: 100px;
+                }
+            .t-records ~ div {
+                display: none;
+            }
+            </style>`);
   fooDisable();
 }
 function addEl(el, html) {
