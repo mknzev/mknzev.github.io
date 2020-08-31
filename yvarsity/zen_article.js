@@ -17,9 +17,15 @@ function loadContent() {
   addEl(el,`<div class="article-body markdown">${arr}</div>`);
   addEl(head,`<link rel="stylesheet" href="https://p18.zdassets.com/hc/theming_assets/708440/358822/style.css">`);
   addEl(el,` <style>
-             h1, h2, h3, h4, h5, h6 {
-                 margin-top: 50px;
-            } 
+            h1, h2 {
+                margin-top: 30px;
+            }
+            h3, h4 {
+                margin-top: 15px;
+            }
+            h5, h6 {
+                margin-top: 10px;
+            }
             .main {
                 max-width: 750px;
                 margin: 100px;
