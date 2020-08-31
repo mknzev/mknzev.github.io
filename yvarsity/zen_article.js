@@ -27,6 +27,9 @@ function loadContent() {
             .t-records ~ div {
                 display: none;
             }
+            .markdown img {
+                margin: 25px;
+            }
             </style>`);
 }
 function addEl(el, html) {
