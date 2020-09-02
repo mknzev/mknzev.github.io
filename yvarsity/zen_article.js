@@ -36,6 +36,9 @@ function loadContent() {
             .markdown img {
                 margin: 25px;
             }
+            a {
+                color: rgba(36, 132, 218, 1)!important;
+            }
             </style>`);
 }
 function addEl(el, html) {
