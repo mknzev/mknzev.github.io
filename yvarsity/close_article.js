@@ -5,7 +5,7 @@ let el = document.querySelector(".main"),
 fetch(
   new Request(
     `http://ducknest.ga:8000/article/${el.id}`
-  )
+  ), {headers: "Access-Control-Allow-Origin: *"}
 )
   .then(responce => responce.json())
   .then(data => (arr = data.article.body))
