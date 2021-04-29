@@ -6,7 +6,7 @@ fetch(
   new Request(
     `http://ducknest.ga:8000/article/${el.id}`, {
         headers: {
-            'Access-Control-Allow-Origin': *"
+            'Access-Control-Allow-Origin': '*'
         }
      }
   )
