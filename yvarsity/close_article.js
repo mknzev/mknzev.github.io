@@ -4,7 +4,7 @@ let el = document.querySelector(".main"),
 
 fetch(
   new Request(
-    `http://ducknest.ga:8000/article/${el.id}`, {
+    `http://ducknest.ga/article/${el.id}`, {
         headers: {
             'Access-Control-Allow-Origin': '*'
         }
